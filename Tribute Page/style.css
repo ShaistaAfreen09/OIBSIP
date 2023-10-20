@@ -1,0 +1,315 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.typewriter {
+  overflow: hidden;
+  border-right: .15em solid ;
+  white-space: nowrap;
+  margin-left: 10px;
+  letter-spacing: .15em;
+  animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+.text-container {
+  text-align: left;
+  margin-left: 250px; 
+  margin-bottom: 220px;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color:#99F443; }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+.img-div{
+    margin-right: 2px;
+    margin-left: 220px;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 10px;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+#scroll-down {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 2rem;
+  position: absolute;
+  bottom: 10px;
+  left: 49%;
+  padding: 10px;
+  border: 2px solid;
+  border-radius: 40px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  animation: upDown 1000ms linear infinite;
+}
+.profile-image {
+    max-width: 40%; 
+    margin-left: 480px;
+    margin-top: 120px;
+}
+
+.up-down {
+  display: flex;
+  flex-direction: row;
+  gap: 1.2rem;
+  animation: upDown 1000ms linear infinite;
+  position: absolute;
+  bottom: 2rem;
+  left: 49%;
+}
+.up-down i {
+  color: #fff;
+}
+
+@keyframes upDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.bg-dark {
+  color: #fff;
+  background-color: #000;
+}
+.bg-dark .pQuote{
+    color: #000;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.bg-darkp{
+  background-color: #99F443;
+}
+
+.bg-light {
+  color:#fff;
+  background-color: #000000;
+}
+
+.tribute-badge {
+    letter-spacing: 10px;
+    font-family: "Libre Franklin", sans-serif;
+    margin-left: 2px;
+    color: #99F443;
+}
+
+.banner {
+  background-image: url("https://github.com/xadd-145/new/blob/a64f17124da95f883aec54707925441fb7848bfd/apj%20abdul%20kalam.png");
+  background-position: right 4rem;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  filter: saturate(0.5);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.quote {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.quote div {
+  flex: 1;
+}
+.quote .img-div {
+  text-align: right;
+  overflow: hidden;
+  border-radius: 2rem;
+}
+
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 2rem;
+  }
+  .quote {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .quote div {
+    flex: auto;
+    text-align: center;
+  }
+}
+.biography {
+  height: auto;
+  padding: 3rem 2rem;
+}
+.biography .bio {
+  margin-bottom: 8rem;
+}
+.biography .bio h4 {
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  color:#99F443;
+}
+.biography .bio p {
+  font-size: 1rem;
+}
+.biography h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+  color: #99F443;
+}
+.biography p {
+  text-align: justify;
+  letter-spacing: 2px;
+}
+.biography span {
+  color: #99F443;
+  font-weight: bold;
+}
+.biography .up-down i {
+  color: white;
+}
+
+#fourth-page {
+  max-width: 900px;
+  padding: 3rem 2rem;
+  height: auto;
+}
+#fourth-page .container {
+  padding: 2rem;
+}
+#fourth-page h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+}
+#fourth-page h3 span {
+  color: #99F443;
+}
+#fourth-page p {
+  text-align: justify;
+  letter-spacing: 2px;
+}
+#fourth-page span {
+  font-weight: bold;
+}
+
+
+#fourth-page .inv-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+#fourth-page .description {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 10px;
+  letter-spacing: normal;
+}
+
+.pQuote {
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+.pQuote span {
+  color: #99F443;
+  text-align: right;
+  display: block;
+  font-size: 0.8rem;
+}
+
+.achievements-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    box-shadow: #99F443;
+}
+
+.achievement-box {
+    background-color:black;
+    border: 2px solid #99F443;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: #99F443;
+}
+
+.achievement-box h3 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color:white;
+}
+
+.inv-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #99F443;
+}
+
+.description {
+    font-size: 1rem;
+    line-height: 1.4;
+    color: white;
+}
+.four{
+  background-color: #000;
+}
+
